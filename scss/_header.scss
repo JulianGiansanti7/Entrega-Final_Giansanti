@@ -1,0 +1,18 @@
+#navigation__container {
+    background-color: $dark-color;
+    img {
+        width: 100px;
+        min-width: 50px;
+        transition: transform 0.5s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    .navbar-toggler {
+        border: none;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}

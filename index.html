@@ -20,96 +20,429 @@
             integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
             crossorigin="anonymous"
         />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+        <!-- Navbar -->
+        <header id="navigation__container">
+            <div class="text-center">
+                <a href="./index.html"
+                    ><img src="./assets/img/logo.webp" alt="logo"
+                /></a>
+            </div>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid navbar-dark justify-content-center">
                     <button
                         class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
                         <span class="navbar-toggler-icon"></span>
+                        <span>Menú</span>
                     </button>
                     <div
-                        class="collapse navbar-collapse"
-                        id="navbarSupportedContent"
+                        class="collapse navbar-collapse justify-content-center"
+                        id="navbarNavAltMarkup"
                     >
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#"
-                                    >Home</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Action</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Another action</a
-                                        >
-                                    </li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Something else here</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link disabled"
-                                    aria-disabled="true"
-                                    >Disabled</a
-                                >
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input
-                                class="form-control me-2"
-                                type="search"
-                                placeholder="Search"
-                                aria-label="Search"
-                            />
-                            <button
-                                class="btn btn-outline-success"
-                                type="submit"
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="./pages/guitarras.html"
+                                >Guitarras</a
                             >
-                                Search
-                            </button>
-                        </form>
+                            <a class="nav-link" href="./pages/nosotros.html"
+                                >Nosotros</a
+                            >
+                            <a class="nav-link" href="./pages/contacto.html"
+                                >Contacto</a
+                            >
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <main></main>
-        <section></section>
+        <!-- Carrousel -->
+        <div
+            id="carouselExampleIndicators"
+            class="carousel slide carousel-container"
+        >
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="./assets/img/carrusel_1.jpg"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./assets/img/carrusel_2.jpg"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./assets/img/carrusel_3.jpg"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Main -->
+        <main class="home__container">
+            <div class="home__container--info">
+                <h2 class="subtitle">Bienvenido a</h2>
+                <h1 class="title">Crucial Sin</h1>
+                <p class="paragraph">
+                    En Crucial Sin ofrecemos guitarras seleccionadas
+                    cuidadosamente por su calidad, sonido y carácter. Porque
+                    cada músico merece un instrumento a la altura de su pasión.
+                </p>
+            </div>
+            <!-- Seccion 1 - lo nuevo -->
+            <section class="homeSection__container">
+                <!-- Title -->
+                <h2 class="subtitle">Lo Nuevo</h2>
+                <!-- Cards Container -->
+                <div class="homeSection__guitars">
+                    <!-- Cards Guitar -->
+                    <div class="guitar__cards">
+                        <!-- Guitar Info -->
+                        <div class="guitar__cards--info">
+                            <a href="#" class="guitar-link">
+                                <img
+                                    src="./assets/img/guitars/lespaul/lespaul_1.png"
+                                    alt="guitar"
+                                />
+                                <h3 class="guitar-title">
+                                    Les Paul Standard 50s Plain Top, Dirty Lemon
+                                    Burst
+                                </h3>
+                                <p class="guitar-price">Lista: U$2,599.00</p>
+                                <p class="guitar-price">
+                                    6 x U$434.00 sin interés
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Button -->
+                        <a href="#" class="guitar-button">Comprar Ahora</a>
+                    </div>
+                    <!-- Cards Guitar -->
+                    <div class="guitar__cards">
+                        <!-- Guitar Info -->
+                        <div class="guitar__cards--info">
+                            <a href="#" class="guitar-link">
+                                <img
+                                    src="./assets/img/guitars/sg/sg_3.png"
+                                    alt="guitar"
+                                />
+                                <h3 class="guitar-title">
+                                    EDS-1275 Doubleneck Cherry Red - Jimmy Page
+                                </h3>
+                                <p class="guitar-price">Lista: U$7,999.00</p>
+                                <p class="guitar-price">
+                                    6 x U$1334.00 sin interés
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Button -->
+                        <a href="#" class="guitar-button">Comprar Ahora</a>
+                    </div>
+                    <!-- Cards Guitar -->
+                    <div class="guitar__cards">
+                        <!-- Guitar Info -->
+                        <div class="guitar__cards--info">
+                            <a href="#" class="guitar-link">
+                                <img
+                                    src="./assets/img/guitars/acoustic/acoustic_1.png"
+                                    alt="guitar"
+                                />
+                                <h3 class="guitar-title">
+                                    1942 Banner Southern Jumbo Vintage Sunburst
+                                </h3>
+                                <p class="guitar-price">Lista: U$5,299.00</p>
+                                <p class="guitar-price">
+                                    6 x U$884.00 sin interés
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Button -->
+                        <a href="#" class="guitar-button">Comprar Ahora</a>
+                    </div>
+                    <!-- Cards Guitar -->
+                    <div class="guitar__cards">
+                        <!-- Guitar Info -->
+                        <div class="guitar__cards--info">
+                            <a href="#" class="guitar-link">
+                                <img
+                                    src="./assets/img/guitars/explorer/explorer_1.png"
+                                    alt="guitar"
+                                />
+                                <h3 class="guitar-title">
+                                    1958 Korina Explorer, Ebony, Murphy Lab
+                                    Light Aged Ebony
+                                </h3>
+                                <p class="guitar-price">Lista: U$11,499.00</p>
+                                <p class="guitar-price">
+                                    6 x U$1917.00 sin interés
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Button -->
+                        <a href="#" class="guitar-button">Comprar Ahora</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Seccion 2 - Clientes -->
+            <section class="homeSection__container">
+                <!-- Title -->
+                <h2 class="subtitle">Nuestros Clientes</h2>
+                <!-- Clients Container -->
+                <div class="homeSection__clients">
+                    <!-- Cliente 1 -->
+                    <div class="clients__cards">
+                        <!-- Clients Info -->
+                        <div class="clients__cards--client">
+                            <i class="fa-solid fa-user client-icon"></i>
+                            <div class="clients__cards--info">
+                                <p class="client-name">Luis</p>
+                                <h3 class="subtitle">
+                                    1958 Korina Explorer, Ebony, Murphy Lab
+                                    Light Aged Ebony
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- Stars -->
+                        <div class="clients__cards--stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- Text -->
+                        <p>
+                            "La 1958 Korina Explorer Murphy Lab es una locura.
+                            El acabado aged en ebony es simplemente hermoso,
+                            parece salida de una cápsula del tiempo. El sustain
+                            es increíble y la comodidad del mástil sorprende
+                            para una guitarra de este tipo. Ideal para rock
+                            pesado, pero también responde muy bien en limpio. Es
+                            una joya, no hay otra forma de decirlo."
+                        </p>
+                    </div>
+
+                    <!-- Cliente 2 -->
+                    <div class="clients__cards">
+                        <!-- Clients Info -->
+                        <div class="clients__cards--client">
+                            <i class="fa-solid fa-user client-icon"></i>
+                            <div class="clients__cards--info">
+                                <p class="client-name">Juan</p>
+                                <h3 class="subtitle">
+                                    EDS-1275 Doubleneck Cherry Red - Jimmy Page
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- Stars -->
+                        <div class="clients__cards--stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- Text -->
+                        <p>
+                            "Siempre soñé con tener esta doble mástil. La
+                            EDS-1275 en Cherry Red no solo se ve imponente, sino
+                            que suena como un cañón. Ideal para tocar en vivo
+                            sin tener que cambiar de guitarra entre secciones de
+                            6 y 12 cuerdas. Tiene ese misticismo de Page, pero
+                            también se adapta a otros estilos sin problemas. Un
+                            lujo para coleccionistas y fanáticos del rock
+                            clásico."
+                        </p>
+                    </div>
+
+                    <!-- Cliente 3 -->
+                    <div class="clients__cards">
+                        <!-- Clients Info -->
+                        <div class="clients__cards--client">
+                            <i class="fa-solid fa-user client-icon"></i>
+                            <div class="clients__cards--info">
+                                <p class="client-name">Ludmila</p>
+                                <h3 class="subtitle">
+                                    Les Paul Standard 50s Plain Top, Dirty Lemon
+                                    Burst
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- Stars -->
+                        <div class="clients__cards--stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- Text -->
+                        <p>
+                            "Esta Les Paul tiene todo lo que buscaba: tono
+                            grueso, sustain eterno y una estética que enamora.
+                            El Dirty Lemon Burst es aún más lindo en persona, y
+                            el cuerpo tiene ese peso clásico que te hace sentir
+                            que estás tocando una verdadera guitarra de los 50.
+                            No es solo una belleza, es una bestia."
+                        </p>
+                    </div>
+
+                    <!-- Cliente 4 -->
+                    <div class="clients__cards">
+                        <!-- Clients Info -->
+                        <div class="clients__cards--client">
+                            <i class="fa-solid fa-user client-icon"></i>
+                            <div class="clients__cards--info">
+                                <p class="client-name">Pablo</p>
+                                <h3 class="subtitle">
+                                    1942 Banner Southern Jumbo Vintage Sunburst
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- Stars -->
+                        <div class="clients__cards--stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- Text -->
+                        <p>
+                            "La 1942 Banner Southern Jumbo es pura historia
+                            hecha guitarra. El tono es cálido, con una
+                            proyección hermosa, ideal para fingerpicking y folk.
+                            El acabado Vintage Sunburst le da una presencia
+                            increíble. Se siente como tocar una pieza de museo,
+                            pero viva. Si buscás alma en una acústica, esta es."
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer__container">
+            <!-- Info -->
+            <div class="footer__info">
+                <!-- Map -->
+                <div class="footer__info--map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.897136982211!2d-58.427658895753154!3d-34.60546202914275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca602cc5a3d3%3A0xb476c028591a5bc!2sKairon%20Music%20Instrumentos%20Musicales%20sucursal%20Almagro!5e0!3m2!1ses!2sar!4v1748329827533!5m2!1ses!2sar"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                <!-- Links -->
+                <div class="footer__info--links">
+                    <!-- Social -->
+                    <div class="links__social">
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            class="media-link"
+                            ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            class="media-link"
+                            ><i class="fa-brands fa-square-facebook"></i
+                        ></a>
+                        <a
+                            href="https://x.com/"
+                            target="_blank"
+                            class="media-link"
+                            ><i class="fa-brands fa-square-x-twitter"></i
+                        ></a>
+                    </div>
+                    <!-- Page Links -->
+                    <div class="links__page">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">Guitarras</a>
+                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="#">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Logo Inicio -->
+            <div class="text-center">
+                <a href="#"><img src="./assets/img/logo.webp" alt="logo" /></a>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="copy">© 2025. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
         <!-- Bootstrap Script -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

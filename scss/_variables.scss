@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+//mixins
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin title-xl {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+//colors
+$lighter: #fff;
+$light-color: #c7c7c7;
+$light-hover: #bcbcbc;
+$light-active: #aeaeae;
+$normal-color: #828282;
+$normal-hover: #6f6f6f;
+$normal-active: #5f5f5f;
+$dark-color: #000;
+$dark-hover: #212121;
+$dark-active: #0e0e0e;
+$primary-color: #00d7e0;

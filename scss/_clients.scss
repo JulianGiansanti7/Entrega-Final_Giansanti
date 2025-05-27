@@ -1,0 +1,43 @@
+.homeSection__clients {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.clients__cards {
+    width: 350px;
+    border: 1px solid $light-color;
+    border-radius: 20px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .fa-star {
+        color: $primary-color;
+    }
+}
+
+.clients__cards--client {
+    display: flex;
+    justify-content: space-around;
+    .client-icon {
+        font-size: 60px;
+        width: 20%;
+    }
+}
+
+.clients__cards--info {
+    width: 80%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    .client-name {
+        margin: 0;
+    }
+    .subtitle {
+        font-size: 16px;
+        padding: 0;
+    }
+}
