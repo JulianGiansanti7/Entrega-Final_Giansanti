@@ -65,7 +65,133 @@
                 </div>
             </nav>
         </header>
-        <main>Contacto</main>
+        <main class="contact_form__container">
+            <form class="contact_form__container--form" action="#">
+                <h2>Envíanos un Mensaje</h2>
+                <p class="paragraph">
+                    Estamos acá para ayudarte. Ya sea que tengas dudas, quieras
+                    más información sobre nuestros productos, o simplemente te
+                    interese charlar sobre guitarras, no dudes en escribirnos.
+                    Completá el formulario o comunicate por nuestras redes
+                    sociales. ¡Te vamos a responder lo antes posible!
+                </p>
+                <!-- Inputs -->
+                <h2>Datos Personales</h2>
+                <div class="form__container--form_info">
+                    <div class="contact_form__container--input">
+                        <label for="name">Nombre *</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                            minlength="3"
+                            maxlength="20"
+                            pattern="[A-Za-z\s]+"
+                        />
+                    </div>
+                    <div class="contact_form__container--input">
+                        <label for="surname">Apellido *</label>
+                        <input
+                            type="text"
+                            name="surname"
+                            id="surname"
+                            required
+                            minlength="3"
+                            maxlength="20"
+                            pattern="[A-Za-z\s]+"
+                        />
+                    </div>
+                    <div class="contact_form__container--input">
+                        <label for="tel">Celular *</label>
+                        <input
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            required
+                            placeholder="Ejemplo: +5493411231234"
+                            pattern="[0-9]+"
+                        />
+                    </div>
+                    <div class="contact_form__container--input">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                </div>
+                <!-- Select -->
+                <h2>Guitarras</h2>
+                <div class="form__container--form_select">
+                    <label for="cars">guitarra *</label>
+                    <select name="cars" id="cars" required>
+                        <option value="Seleccionar guitarra de preferencia">
+                            Seleccionar guitarra de preferencia
+                        </option>
+                        <option
+                            value="Les Paul Standard 50s Plain Top, Dirty Lemon Burst"
+                        >
+                            Les Paul Standard 50s Plain Top, Dirty Lemon Burst
+                        </option>
+                        <option
+                            value="Les Paul Studio Figured Top Dark Purple Burst"
+                        >
+                            Les Paul Studio Figured Top Dark Purple Burst
+                        </option>
+                        <option value="Les Paul Standard 50s P-90 Ebony">
+                            Les Paul Standard 50s P-90 Ebony
+                        </option>
+                        <option value="SG Standard Dark Walnut">
+                            SG Standard Dark Walnut
+                        </option>
+                        <option value="SG Modern Dark Purple Burst">
+                            SG Modern Dark Purple Burst
+                        </option>
+                        <option value="EDS-1275 Doubleneck Cherry Red">
+                            EDS-1275 Doubleneck Cherry Red
+                        </option>
+                        <option
+                            value="1958 Korina Explorer (White Pickguard), Ebony, Murphy Lab Light Aged Ebony"
+                        >
+                            1958 Korina Explorer (White Pickguard), Ebony,
+                            Murphy Lab Light Aged Ebony
+                        </option>
+                        <option value="80s Explorer Ebony">
+                            80s Explorer Ebony
+                        </option>
+                        <option value="70s Explorer Classic White">
+                            70s Explorer Classic White
+                        </option>
+                        <option
+                            value="1942 Banner Southern Jumbo Vintage Sunburst"
+                        >
+                            1942 Banner Southern Jumbo Vintage Sunburst
+                        </option>
+                        <option value="L-00 Special Satin Vintage Sunburst">
+                            L-00 Special Satin Vintage Sunburst
+                        </option>
+                        <option value="Hummingbird Ultima Autumnburst">
+                            Hummingbird Ultima Autumnburst
+                        </option>
+                    </select>
+                </div>
+                <!-- Textarea -->
+                <h2>Mensaje</h2>
+                <div class="contact_form__container--textarea">
+                    <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Detalles de tu consulta *"
+                        required
+                        maxlength="1000"
+                    ></textarea>
+                    <p class="paragraph-xs">Máx. 1000 caracteres</p>
+                </div>
+
+                <!-- Button -->
+                <div class="contact_form__container--button">
+                    <input type="submit" value="Enviar" />
+                </div>
+            </form>
+        </main>
         <!-- Footer -->
         <footer class="footer__container">
             <!-- Info -->
