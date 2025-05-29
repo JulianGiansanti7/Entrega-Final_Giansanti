@@ -270,6 +270,26 @@
   font-size: 12px;
 }
 
+/* Pagina de Guitarras */
+.guitarsPage__container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guitarsPage__container .title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.guitarsPage__container .guitarsPage__container--title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 40px;
+}
+
 .homeSection__clients {
   display: flex;
   justify-content: center;

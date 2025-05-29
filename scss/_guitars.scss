@@ -44,3 +44,17 @@
         font-size: 12px;
     }
 }
+
+/* Pagina de Guitarras */
+
+.guitarsPage__container {
+    padding: 40px;
+    @include flex-center;
+    .title {
+        @include title-xl;
+    }
+    .guitarsPage__container--title {
+        @include title;
+        padding: 40px;
+    }
+}
