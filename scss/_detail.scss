@@ -1,0 +1,142 @@
+.detail__container {
+    padding: 20px;
+}
+
+/* --- Carousel --- */
+
+.carousel-container-guitar {
+    width: 100%;
+    height: 55vh;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.custom-carousel .carousel-inner,
+.custom-carousel .carousel-item,
+.custom-carousel .carousel-item img {
+    max-height: 100%;
+}
+
+.custom-carousel .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 480px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $normal-color;
+    border-radius: 20%;
+}
+
+/* Info Guitar */
+
+.detail__guitar--text {
+    margin-bottom: 20px;
+    @include flex-column;
+    gap: 8px;
+    .guitar-title {
+        @include title;
+        font-size: 20px;
+    }
+    .guitar-stars {
+        color: $primary-color;
+    }
+    .guitar-price {
+        font-weight: 600;
+        span {
+            font-size: 12px;
+        }
+    }
+    .guitar-button {
+        text-align: center;
+        width: 150px;
+        @include button;
+    }
+}
+
+/* Text Guitar */
+.detail__guitar--info {
+    @include flex-column;
+    gap: 8px;
+    .title {
+        @include title;
+        font-size: 24px;
+    }
+}
+
+/* Clients */
+
+.detail__guitar--client {
+    border-top: 1px solid $light-color;
+    border-bottom: 1px solid $light-color;
+    padding: 20px 0;
+    .guitar__client--stars {
+        display: flex;
+        gap: 12px;
+        .client-stars {
+            color: $primary-color;
+        }
+    }
+    .client__text--info {
+        .client--name {
+            margin: 0;
+        }
+        .client--product {
+            @include title;
+            font-size: 20px;
+        }
+    }
+}
+
+.detail__guitar--more {
+    @include flex-center;
+
+    .title {
+        padding: 40px;
+        @include title;
+    }
+}
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+    .carousel-container-guitar {
+        width: 520px;
+        height: 60vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .detail__guitar--text {
+        width: 40%;
+    }
+    .detail__guitar--info {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .detail__guitar--client {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .detail__container--guitar {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-container-guitar {
+        max-width: 50vw;
+        max-height: 60vh;
+    }
+}
+@media (min-width: 1200px) {
+    .detail__guitar--text {
+        width: 30%;
+    }
+    .detail__guitar--info {
+        width: 70%;
+    }
+    .detail__guitar--client {
+        margin: 0 auto;
+        width: 70%;
+    }
+}

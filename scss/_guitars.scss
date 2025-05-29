@@ -6,7 +6,7 @@
 }
 
 .guitar__cards {
-    width: 350px;
+    max-width: 350px;
     border: 1px solid $light-color;
     padding: 12px;
     .guitar-link {
@@ -14,17 +14,7 @@
         color: $dark-color;
     }
     .guitar-button {
-        text-decoration: none;
-        background-color: $dark-color;
-        color: $lighter;
-        @include title;
-        font-size: 12px;
-        padding: 8px;
-        border: none;
-        &:hover {
-            background-color: $dark-hover;
-            box-shadow: 0 4px 8px rgba($color: #000, $alpha: 0.3);
-        }
+        @include button;
     }
 }
 

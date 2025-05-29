@@ -182,11 +182,25 @@
   flex-direction: column;
   gap: 32px;
 }
+.contact_form__container .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-align: center;
+}
 
 .contact_form__container--form {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+.contact_form__container--form .paragraph span {
+  font-weight: 700;
 }
 
 /* --- info --- */
@@ -328,7 +342,7 @@
 }
 
 .guitar__cards {
-  width: 350px;
+  max-width: 350px;
   border: 1px solid #c7c7c7;
   padding: 12px;
 }
@@ -391,6 +405,167 @@
   padding: 40px;
 }
 
+.detail__container {
+  padding: 20px;
+}
+
+/* --- Carousel --- */
+.carousel-container-guitar {
+  width: 100%;
+  height: 55vh;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.custom-carousel .carousel-inner,
+.custom-carousel .carousel-item,
+.custom-carousel .carousel-item img {
+  max-height: 100%;
+}
+
+.custom-carousel .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 480px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #828282;
+  border-radius: 20%;
+}
+
+/* Info Guitar */
+.detail__guitar--text {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  gap: 8px;
+}
+.detail__guitar--text .guitar-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.detail__guitar--text .guitar-stars {
+  color: #00d7e0;
+}
+.detail__guitar--text .guitar-price {
+  font-weight: 600;
+}
+.detail__guitar--text .guitar-price span {
+  font-size: 12px;
+}
+.detail__guitar--text .guitar-button {
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 8px;
+  border: none;
+}
+.detail__guitar--text .guitar-button:hover {
+  background-color: #212121;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Guitar */
+.detail__guitar--info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  gap: 8px;
+}
+.detail__guitar--info .title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+/* Clients */
+.detail__guitar--client {
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  padding: 20px 0;
+}
+.detail__guitar--client .guitar__client--stars {
+  display: flex;
+  gap: 12px;
+}
+.detail__guitar--client .guitar__client--stars .client-stars {
+  color: #00d7e0;
+}
+.detail__guitar--client .client__text--info .client--name {
+  margin: 0;
+}
+.detail__guitar--client .client__text--info .client--product {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.detail__guitar--more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.detail__guitar--more .title {
+  padding: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  .carousel-container-guitar {
+    width: 520px;
+    height: 60vh;
+  }
+}
+@media (min-width: 992px) {
+  .detail__guitar--text {
+    width: 40%;
+  }
+  .detail__guitar--info {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .detail__guitar--client {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .detail__container--guitar {
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-container-guitar {
+    max-width: 50vw;
+    max-height: 60vh;
+  }
+}
+@media (min-width: 1200px) {
+  .detail__guitar--text {
+    width: 30%;
+  }
+  .detail__guitar--info {
+    width: 70%;
+  }
+  .detail__guitar--client {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
 .homeSection__clients {
   display: flex;
   justify-content: center;

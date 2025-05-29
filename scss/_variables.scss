@@ -43,6 +43,20 @@
     font-size: 12px;
 }
 
+@mixin button {
+    text-decoration: none;
+    background-color: $dark-color;
+    color: $lighter;
+    @include title;
+    font-size: 12px;
+    padding: 8px;
+    border: none;
+    &:hover {
+        background-color: $dark-hover;
+        box-shadow: 0 4px 8px rgba($color: #000, $alpha: 0.3);
+    }
+}
+
 /* --- Image --- */
 @mixin image {
     width: 100%;

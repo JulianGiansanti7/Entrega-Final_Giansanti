@@ -3,10 +3,19 @@
     min-height: 100vh;
     padding: 16px;
     @include flex-column;
+    .title {
+        @include flex-center;
+        @include title-xl;
+        margin: 20px 0;
+        text-align: center;
+    }
 }
 
 .contact_form__container--form {
     @include flex-column;
+    .paragraph span {
+        font-weight: 700;
+    }
 }
 
 /* --- info --- */
