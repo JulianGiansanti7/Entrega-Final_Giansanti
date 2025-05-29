@@ -51,10 +51,12 @@
     padding: 40px;
     @include flex-center;
     .title {
+        text-align: center;
         @include title-xl;
     }
     .guitarsPage__container--title {
         @include title;
+        text-align: center;
         padding: 40px;
     }
 }

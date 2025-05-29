@@ -43,6 +43,20 @@
     font-size: 12px;
 }
 
+/* --- Image --- */
+@mixin image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* --- Shadow --- */
+@mixin shadow {
+    box-shadow: 0 8px 12px rgba($color: #000, $alpha: 0.3);
+}
+
 @mixin title-xl {
     font-size: 3.5rem;
     font-weight: 700;
