@@ -36,7 +36,7 @@ No somos una tienda más. **Crucial Sin** nace de la pasión por el rock y por l
 
 Todo el contenido es ficticio y fue creado con **fines educativos.**
 
-Los logos e imágenes de bandas se usan solo con fines ilustrativos.
+Las imágenes de guitarras se usan solo con fines ilustrativos.
 
 ## 🌐 URL
 
