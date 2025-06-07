@@ -4,17 +4,6 @@
 
 **Crucial Sin** es una tienda online **ficticia** en argentina especializada exclusivamente en guitarras **Gibson** de alta gama. Nuestro enfoque está en ofrecer una experiencia premium, con una selección curada de modelos únicos, atención personalizada y un proceso de compra centrado en el contacto humano, directo y profesional.
 
-## 🌟 ¿Qué ofrecemos?
-
--   Guitarras **Gibson originales y exclusivas**
--   Asesoramiento personalizado antes y después de la compra.
--   Proceso de compra mediante formulario y contacto directo (WhatsApp/email)
--   Envíos a todo el país
-
-## 🎸 Filosofía
-
-No somos una tienda más. **Crucial Sin** nace de la pasión por el rock y por los instrumentos que marcaron la historia. Elegimos cada guitarra como si fuera para nosotros. Creemos que una Gibson no se vende: se presenta, se conoce y se elige.
-
 ## 💻 Estructura del sitio
 
 -   **Inicio**: presentación visual con carrusel y secciones destacadas como **Nuevos Productos** y **Reseñas de Clientes.**
